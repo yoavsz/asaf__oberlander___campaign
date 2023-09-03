@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
           }
           const today = new Date();
           const todayDay = today.getDate();
-          if(i<todayDay&&currentMonth===7){
+          if(i<todayDay&&currentMonth===8){
             dayElement.style.background="#7e7272"
           }
           for (let j = 0; j < mark__list.length; j ++) {
