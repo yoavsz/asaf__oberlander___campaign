@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const calendarDays = document.querySelector(".calendar-days");
   const currentMonthText = document.getElementById("currentMonth");
   const eventsContainer = document.getElementById("events");
-  const mark__list=[3,9,"לייב פייסבוק בנושא חינוך",5,9,"הרמת כוסית לשנה החדשה",18,9," לייב פייסבוק בנושא תשתיות",1,10," לייב פייסבוק בנושא בטחון",15,10,"שאלות בווטסאפ",31,10,"יום הבחירות"]
+  const mark__list=[18,9,"לייב פייסבוק בנושא תשתיות",1,10,"לייב פייסבוק בנושא בטחון",15,10,"שאלות בווטסאפ",31
+,10,"יום הבחירות"]
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
   let cnt=0;
