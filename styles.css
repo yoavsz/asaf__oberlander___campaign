@@ -430,7 +430,20 @@ padding: 20px;
     
 border-radius: 25px;
    }
+   .new__year__link{
+    font-size: 40px;
+    position: relative;
+    text-decoration: none;
+    top: 825px;
+    font-weight: bolder;
+    color: white;
+    right: 85px;
+    background: blue;
+    padding: 30px;
+    border-radius: 27px;
+}
 /*footer*/
+
 footer{
     position: fixed;
     bottom: 0px;
@@ -459,6 +472,57 @@ footer ul li a img{
     height: 120px;
     width: 125px;
     margin: 0 auto;
+}
+/*new year page*/
+.new__year__page{
+    height: 2020px;
+}
+.new__year__page h1{
+
+color: white;
+
+text-align: center;
+
+position: relative;
+
+top: 200px;
+
+font-size: 60px;
+
+border-bottom: 5px solid;
+
+width: 75%;
+
+margin: 0 auto;
+}
+.new__year__page a{
+
+text-decoration: none;
+
+font-size: 40px;
+
+font-weight: bold;
+
+position: relative;
+
+top: 110px;
+
+right: 20px;
+
+color: white;
+
+background: tomato;
+
+padding: 10px;
+
+border-radius: 20px;
+}
+.new__year__page img{
+ width: 100%;
+ position: relative;
+ top: 250px;
+ height: 60%;
+ border-radius: 70px;
 }
 @media screen and (min-width: 1000px)
 {
@@ -601,5 +665,30 @@ footer ul li a img{
       height: 75px;
       width: 75px;
     }
+    /*new year page*/
+    .new__year__page{
+        height: 1000px;
+    }
+    .new__year__page a{
+       position: relative;
+       top: 50px;
+       font-size: 30px;
     
+    }
+    .new__year__page h1{
+      font-size: 45px;
+      width: 40%;
+      position: relative;
+      top: 50px;
+    }
+    .new__year__page img{
+       width: 50%;
+       height: 75%;
+       position:absolute;
+       top: 0px;
+       left: 0px;
+       right: 0px;
+       bottom: -200px;
+       margin: auto;       
+    }
 }
