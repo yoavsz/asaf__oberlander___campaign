@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const calendarDays = document.querySelector(".calendar-days");
   const currentMonthText = document.getElementById("currentMonth");
   const eventsContainer = document.getElementById("events");
-  const mark__list=[20,9,"חוג בית משפחת וולף",1,10,"לייב פייסבוק בנושא בטחון",15,10,"שאלות בווטסאפ",31
-,10,"יום הבחירות"]
+  const mark__list=[26,9,"חוג בית משפחת סדקוביץ",1,10,"לייב פייסבוק בנושא ביטחון",15,10,"שאלות בווטסאפ"
+  ,12,10,"חוג בית משפחת הרשקוביץ למתאמני A+",31,10,"יום הבחירות"]
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
   let cnt=0;

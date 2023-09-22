@@ -1,7 +1,7 @@
 body{
     background-image: linear-gradient(45deg, #1482d6, #70C0E5);
     background-repeat:no-repeat;
-    height: 10650px;
+    height: 11000px;
     font-family: system-ui;
 }
 /*header*/
@@ -70,6 +70,7 @@ header img{
     background-color: white;
     border-radius: 50px;
     text-decoration: none;
+    z-index: 1;
 }
 .work__plan a p{
     font-size: 42px;
@@ -377,7 +378,7 @@ font-weight: bold;
     font-family: sans-serif;
     position: relative;
     right: 10px;
-    font-size: 47px;
+    font-size: 40px;
     bottom: 20px;
    }
    .happend div div p{
@@ -430,6 +431,9 @@ padding: 20px;
     
 border-radius: 25px;
    }
+   .new__year__Yom__kipor{
+      display: flex;
+   }
    .new__year__link{
     font-size: 40px;
     position: relative;
@@ -437,10 +441,11 @@ border-radius: 25px;
     top: 825px;
     font-weight: bolder;
     color: white;
-    right: 85px;
     background: blue;
-    padding: 30px;
+    padding: 25px;
     border-radius: 27px;
+    text-align: center;
+    margin: 0 auto;
 }
 /*footer*/
 

@@ -87,7 +87,7 @@ header img{
 }
 /*events__pages*/
 .event__page{
-    height: 1145px;
+    height: 100%;
 }
 .event__header{
     display: grid;
@@ -567,7 +567,7 @@ footer ul li a img{
    }
    /*event__pages*/
    .event__page{
-    height: 1200px;
+    height: 100%;
    }
    .event__header img{
     height: 300px;
