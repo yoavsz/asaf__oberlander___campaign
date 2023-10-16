@@ -2,8 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const calendarDays = document.querySelector(".calendar-days");
   const currentMonthText = document.getElementById("currentMonth");
   const eventsContainer = document.getElementById("events");
-  const mark__list=[1,10,"לייב פייסבוק בנושא ביטחון",15,10,"שאלות בווטסאפ"
-  ,12,10,"חוג בית משפחת הרשקוביץ למתאמני A+",31,10,"יום הבחירות"]
+  const mark__list=[31,10,"יום הבחירות"]
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
   let cnt=0;
@@ -46,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
           }
           const today = new Date();
           const todayDay = today.getDate();
-          if(i<todayDay&&currentMonth===8){
+          if(i<todayDay&&currentMonth===9){
             dayElement.style.background="#7e7272"
           }
           for (let j = 0; j < mark__list.length; j ++) {
