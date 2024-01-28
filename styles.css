@@ -1,8 +1,7 @@
 body{
-    background-image: linear-gradient(45deg, #1482d6, #70C0E5);
-    background-repeat:no-repeat;
-    height: 11000px;
     font-family: system-ui;
+    background: #00ade6;
+    height: 10000px;
 }
 /*header*/
 header{
@@ -87,9 +86,7 @@ header img{
     border-radius: 40px;
 }
 /*events__pages*/
-.event__page{
-    height: 1145px;
-}
+.event__page{height: 100%;padding-bottom: 16px;}
 .event__header{
     display: grid;
 }
