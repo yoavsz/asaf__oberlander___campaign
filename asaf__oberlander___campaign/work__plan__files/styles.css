@@ -1,8 +1,7 @@
 body{
-    background-image: linear-gradient(45deg, #1482d6, #70C0E5);
-    background-repeat:no-repeat;
-    height: 10650px;
     font-family: system-ui;
+    background: #00ade6;
+    height: 10000px;
 }
 /*header*/
 header{
@@ -10,7 +9,7 @@ header{
 }
 header img{
     height: 355px;
-    width: 983px;
+    width: 95%;
     margin: auto;
     border-radius: 60px;
     position: absolute;
@@ -70,6 +69,7 @@ header img{
     background-color: white;
     border-radius: 50px;
     text-decoration: none;
+    z-index: 1;
 }
 .work__plan a p{
     font-size: 42px;
@@ -86,9 +86,7 @@ header img{
     border-radius: 40px;
 }
 /*events__pages*/
-.event__page{
-    height: 1145px;
-}
+.event__page{height: 100%;padding-bottom: 16px;}
 .event__header{
     display: grid;
 }
@@ -119,9 +117,141 @@ header img{
     font-weight: bold;
     font-family: sans-serif;
 }
+.team__container{
+    display: none;
+}
+/*team__page*/
+.team__page{
+    height: 100%;
+    background: #2a97eb;
+}
+.team__page h1{
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid;
+    margin: 0 auto;
+    width: 65%;
+    position: relative;
+    top: 30px;
+}
+.team__page a{
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+    background: #ff5555;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+}
+.team__list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    position: relative;
+    top: 30px;
+    margin: auto;
+    gap: 5px;
+}
+.team__list a{
+    display: flex;
+    flex-direction: column;
+    background: #5c5cee;
+    width: 162px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+.team__list a img{
+    width: 95%;
+    border-radius: 15px;
+    position: relative;
+    bottom: 5px;
+}
+.team__list a h2{
+    
+font-size: 20px;
+}
+
+/*nominate page*/
+.team__nominate__page{
+    height: 100%;
+    background: #2a97eb;
+}
+.team__nominate__page a{
+ text-decoration: none;
+ color:  white;
+ background-color: blue;
+ padding: 5px;
+ border-radius: 5px;
+ font-weight: bold;
+ position: relative;
+ top: 5px;
+}
+.team__nominate__page h2{
+
+text-align: center;
+
+color: white;
+
+border-bottom: 2px solid;
+
+position: relative;
+
+width: 50%;
+
+margin: auto;
+
+top: 20px;
+}
+.team__nominate__page span{
+
+position: relative;
+
+top: 40px;
+
+color: white;
+
+font-weight: 600;
+
+background: #6464d7;
+
+padding: 5px;
+
+border: 3px solid;
+
+border-radius: 12px;
+}
+.team__nominate__page p{
+
+position: relative;
+
+top: 40px;
+
+color: white;
+
+text-align: center;
+
+background: #6464d7;
+
+margin-bottom: 54px;
+
+padding: 20px;
+
+border-radius: 20px;
+}
+.team__nominate__page img{
+    width: 60%;
+    margin: auto;
+    position: relative;
+    height: 40%;
+    display: flex;
+    border-radius: 30px;
+    top: 15px;
+}
 /*work__plan pages*/
 .work__plan__pages{
-    height: 5000px;
+    height: 100%;
 }
 .title__pages{
     color: white;
@@ -377,7 +507,7 @@ font-weight: bold;
     font-family: sans-serif;
     position: relative;
     right: 10px;
-    font-size: 47px;
+    font-size: 40px;
     bottom: 20px;
    }
    .happend div div p{
@@ -430,7 +560,24 @@ padding: 20px;
     
 border-radius: 25px;
    }
+   .new__year__Yom__kipor{
+      display: flex;
+   }
+   .new__year__link{
+    font-size: 40px;
+    position: relative;
+    text-decoration: none;
+    top: 825px;
+    font-weight: bolder;
+    color: white;
+    background: blue;
+    padding: 25px;
+    border-radius: 27px;
+    text-align: center;
+    margin: 0 auto;
+}
 /*footer*/
+
 footer{
     position: fixed;
     bottom: 0px;
@@ -459,6 +606,57 @@ footer ul li a img{
     height: 120px;
     width: 125px;
     margin: 0 auto;
+}
+/*new year page*/
+.new__year__page{
+    height: 2020px;
+}
+.new__year__page h1{
+
+color: white;
+
+text-align: center;
+
+position: relative;
+
+top: 200px;
+
+font-size: 60px;
+
+border-bottom: 5px solid;
+
+width: 75%;
+
+margin: 0 auto;
+}
+.new__year__page a{
+
+text-decoration: none;
+
+font-size: 40px;
+
+font-weight: bold;
+
+position: relative;
+
+top: 110px;
+
+right: 20px;
+
+color: white;
+
+background: tomato;
+
+padding: 10px;
+
+border-radius: 20px;
+}
+.new__year__page img{
+ width: 100%;
+ position: relative;
+ top: 250px;
+ height: 60%;
+ border-radius: 70px;
 }
 @media screen and (min-width: 1000px)
 {
@@ -601,5 +799,30 @@ footer ul li a img{
       height: 75px;
       width: 75px;
     }
+    /*new year page*/
+    .new__year__page{
+        height: 1000px;
+    }
+    .new__year__page a{
+       position: relative;
+       top: 50px;
+       font-size: 30px;
     
+    }
+    .new__year__page h1{
+      font-size: 45px;
+      width: 40%;
+      position: relative;
+      top: 50px;
+    }
+    .new__year__page img{
+       width: 50%;
+       height: 75%;
+       position:absolute;
+       top: 0px;
+       left: 0px;
+       right: 0px;
+       bottom: -200px;
+       margin: auto;       
+    }
 }

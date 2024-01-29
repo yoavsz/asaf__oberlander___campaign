@@ -1,8 +1,7 @@
 body{
-    background-image: linear-gradient(45deg, #1482d6, #70C0E5);
-    background-repeat:no-repeat;
-    height: 11000px;
     font-family: system-ui;
+    background: #00ade6;
+    height: 10000px;
 }
 /*header*/
 header{
@@ -10,7 +9,7 @@ header{
 }
 header img{
     height: 355px;
-    width: 983px;
+    width: 95%;
     margin: auto;
     border-radius: 60px;
     position: absolute;
@@ -87,9 +86,7 @@ header img{
     border-radius: 40px;
 }
 /*events__pages*/
-.event__page{
-    height: 1145px;
-}
+.event__page{height: 100%;padding-bottom: 16px;}
 .event__header{
     display: grid;
 }
@@ -119,6 +116,138 @@ header img{
     color: white;
     font-weight: bold;
     font-family: sans-serif;
+}
+.team__container{
+    display: none;
+}
+/*team__page*/
+.team__page{
+    height: 100%;
+    background: #2a97eb;
+}
+.team__page h1{
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid;
+    margin: 0 auto;
+    width: 65%;
+    position: relative;
+    top: 30px;
+}
+.team__page a{
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+    background: #ff5555;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+}
+.team__list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    position: relative;
+    top: 30px;
+    margin: auto;
+    gap: 5px;
+}
+.team__list a{
+    display: flex;
+    flex-direction: column;
+    background: #5c5cee;
+    width: 162px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+.team__list a img{
+    width: 95%;
+    border-radius: 15px;
+    position: relative;
+    bottom: 5px;
+}
+.team__list a h2{
+    
+font-size: 20px;
+}
+
+/*nominate page*/
+.team__nominate__page{
+    height: 100%;
+    background: #2a97eb;
+}
+.team__nominate__page a{
+ text-decoration: none;
+ color:  white;
+ background-color: blue;
+ padding: 5px;
+ border-radius: 5px;
+ font-weight: bold;
+ position: relative;
+ top: 5px;
+}
+.team__nominate__page h2{
+
+text-align: center;
+
+color: white;
+
+border-bottom: 2px solid;
+
+position: relative;
+
+width: 50%;
+
+margin: auto;
+
+top: 20px;
+}
+.team__nominate__page span{
+
+position: relative;
+
+top: 40px;
+
+color: white;
+
+font-weight: 600;
+
+background: #6464d7;
+
+padding: 5px;
+
+border: 3px solid;
+
+border-radius: 12px;
+}
+.team__nominate__page p{
+
+position: relative;
+
+top: 40px;
+
+color: white;
+
+text-align: center;
+
+background: #6464d7;
+
+margin-bottom: 54px;
+
+padding: 20px;
+
+border-radius: 20px;
+}
+.team__nominate__page img{
+    width: 60%;
+    margin: auto;
+    position: relative;
+    height: 40%;
+    display: flex;
+    border-radius: 30px;
+    top: 15px;
 }
 /*work__plan pages*/
 .work__plan__pages{

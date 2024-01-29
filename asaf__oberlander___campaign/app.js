@@ -2,8 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const calendarDays = document.querySelector(".calendar-days");
   const currentMonthText = document.getElementById("currentMonth");
   const eventsContainer = document.getElementById("events");
-  const mark__list=[26,9,"חוג בית משפחת סדקוביץ",1,10,"לייב פייסבוק בנושא ביטחון",15,10,"שאלות בווטסאפ"
-  ,12,10,"חוג בית משפחת הרשקוביץ למתאמני A+",31,10,"יום הבחירות"]
+  const mark__list=[27,2,"יום הבחירות"]
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
   let cnt=0;
@@ -21,13 +20,13 @@ document.addEventListener("DOMContentLoaded", function() {
           const emptyDay = document.createElement("div");
           calendarDays.appendChild(emptyDay);
       }
-      if(currentMonth===7){
+      if(currentMonth===0){
         prevBtn.style.display="none"
       }
       else{
         prevBtn.style.display="block"
       }
-      if(currentMonth===9){
+      if(currentMonth===1){
         nextBtn.style.display="none"
       }
       else{
@@ -46,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
           }
           const today = new Date();
           const todayDay = today.getDate();
-          if(i<todayDay&&currentMonth===8){
+          if(i<todayDay&&currentMonth===9){
             dayElement.style.background="#7e7272"
           }
           for (let j = 0; j < mark__list.length; j ++) {
@@ -63,10 +62,8 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   updateCalendar()
   for(let i=0; i<mark__list.length;i+=3){
-    console.log("length: " +mark__list.length)
-    console.log("i: "+(i+1))
     let event=document.createElement("div")
-    event.innerHTML='<p>'+mark__list[i]+"."+mark__list[i+1]+".2023 : "+mark__list[i+2]+'</p>'+' <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXaSWnM_PftvqwaBjiwNK3ZLmvqCM0QniprIJU796vNjsvlw/viewform">להזמנה לאירוע</a>'
+    event.innerHTML='<p>'+mark__list[i]+"."+mark__list[i+1]+".2024 : "+mark__list[i+2]+'</p>'+' <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXaSWnM_PftvqwaBjiwNK3ZLmvqCM0QniprIJU796vNjsvlw/viewform">להזמנה לאירוע</a>'
     event.className="events__child"
     if(i+3===mark__list.length){
       event.id="no__border__event"
