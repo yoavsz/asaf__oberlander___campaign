@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const calendarDays = document.querySelector(".calendar-days");
   const currentMonthText = document.getElementById("currentMonth");
   const eventsContainer = document.getElementById("events");
-  const mark__list=[27,2,"יום הבחירות"]
+  const mark__list=[13,2,"שאלות ותשובות שלכם אלינו",20,2,"שאלות ותשובות שלכם אלינו",27,2,"יום הבחירות"]
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
   let cnt=0;
@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", function() {
         prevBtn.style.display="none"
       }
       else{
-        prevBtn.style.display="block"
+        prevBtn.style.display="none"
       }
       if(currentMonth===1){
         nextBtn.style.display="none"
       }
       else{
-        nextBtn.style.display="block"
+        nextBtn.style.display="none"
       }
       for (let i = 1; i <= daysInMonth; i++) {
           const dayElement = document.createElement("div");
@@ -62,10 +62,8 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   updateCalendar()
   for(let i=0; i<mark__list.length;i+=3){
-    console.log("length: " +mark__list.length)
-    console.log("i: "+(i+1))
     let event=document.createElement("div")
-    event.innerHTML='<p>'+mark__list[i]+"."+mark__list[i+1]+".2023 : "+mark__list[i+2]+'</p>'+' <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXaSWnM_PftvqwaBjiwNK3ZLmvqCM0QniprIJU796vNjsvlw/viewform">להזמנה לאירוע</a>'
+    event.innerHTML='<p>'+mark__list[i]+"."+mark__list[i+1]+".2024 : "+mark__list[i+2]+'</p>'+' <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXaSWnM_PftvqwaBjiwNK3ZLmvqCM0QniprIJU796vNjsvlw/viewform">להזמנה לאירוע</a>'
     event.className="events__child"
     if(i+3===mark__list.length){
       event.id="no__border__event"
