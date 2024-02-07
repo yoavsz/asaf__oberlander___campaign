@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const calendarDays = document.querySelector(".calendar-days");
   const currentMonthText = document.getElementById("currentMonth");
   const eventsContainer = document.getElementById("events");
-  const mark__list=[27,2,"יום הבחירות"]
+  const mark__list=[13,2,"שאלות ותשובות שלכם אלינו",20,2,"שאלות ותשובות שלכם אלינו",27,2,"יום הבחירות"]
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
   let cnt=0;
@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", function() {
         prevBtn.style.display="none"
       }
       else{
-        prevBtn.style.display="block"
+        prevBtn.style.display="none"
       }
       if(currentMonth===1){
         nextBtn.style.display="none"
       }
       else{
-        nextBtn.style.display="block"
+        nextBtn.style.display="none"
       }
       for (let i = 1; i <= daysInMonth; i++) {
           const dayElement = document.createElement("div");
