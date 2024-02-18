@@ -2,10 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
   const calendarDays = document.querySelector(".calendar-days");
   const currentMonthText = document.getElementById("currentMonth");
   const eventsContainer = document.getElementById("events");
-  const mark__list=[13,2,"שאלות ותשובות שלכם אלינו",20,2,"שאלות ותשובות שלכם אלינו",27,2,"יום הבחירות"]
+  const mark__list=[20,2,"שאלות ותשובות שלכם אלינו",27,2,"יום הבחירות"]
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
-  let cnt=0;
   const date = new Date();
   let currentMonth = date.getMonth();
   let currentYear = date.getFullYear();
