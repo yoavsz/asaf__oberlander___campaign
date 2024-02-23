@@ -43,7 +43,7 @@ header img{
 .work__plan__container{
     display: grid;
     position: relative;
-    top: 475px;
+    top: 513px;
 }
 .work__plan__container h1{
     font-size: 85px;
@@ -126,7 +126,7 @@ header img{
    background: #6a6aed;
    text-decoration: none;
    position: relative;
-   top: 105px;
+   top: 470px;
    margin: auto;
    width: 98%;
    border-radius: 40px;
