@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const calendarDays = document.querySelector(".calendar-days");
   const currentMonthText = document.getElementById("currentMonth");
   const eventsContainer = document.getElementById("events");
-  const mark__list=[20,2,"שאלות ותשובות שלכם אלינו",27,2,"יום הבחירות"]
+  const mark__list=[27,2,"יום הבחירות"]
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
   const date = new Date();
